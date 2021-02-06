@@ -1,12 +1,11 @@
 {
   "name": "newmanssh",
-  "version": "semver",
-  "description": "Test CI Jenkins + newman",
+  "version": "1.0.0",
+  "description": "",
   "main": "newman.js",
   "dependencies": {
-    "newman": "^5.2.2",
-    "newman-reporter-html": "^1.0.5",
-    "nodejs": "^0.0.0"
+    "cucumber-html-reporter": "^5.3.0",
+    "newman": "^5.2.2"
   },
   "devDependencies": {},
   "scripts": {
@@ -16,8 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/apolcarv/newmanssh.git"
   },
-  "keywords": [],
-  "author": "alejandro.polo@pragma.com.co",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/apolcarv/newmanssh/issues"
