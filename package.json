@@ -1,0 +1,26 @@
+{
+  "name": "newmanssh",
+  "version": "semver",
+  "description": "Test CI Jenkins + newman",
+  "main": "newman.js",
+  "dependencies": {
+    "newman": "^5.2.2",
+    "newman-reporter-html": "^1.0.5",
+    "nodejs": "^0.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apolcarv/newmanssh.git"
+  },
+  "keywords": [],
+  "author": "alejandro.polo@pragma.com.co",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apolcarv/newmanssh/issues"
+  },
+  "homepage": "https://github.com/apolcarv/newmanssh#readme"
+}

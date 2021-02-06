@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "6ad518c6-5b01-4346-bb40-eab16164cf22",
+		"name": "Services_jenkins",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Services",
+			"item": [
+				{
+					"name": "info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"output\": \"..graphic1.figure...graphic2.figure...graphic3.figure...graphic4.figure...graphic5.figure...KR_mode.options...business.options...marcas.options...indValCyear.children...indTextCyear.children...indValPyear.children...indTextPyear.children...optimista_box.children...actual_box.children...pesimista_box.children...optimista_box1.children...actual_box1.children...pesimista_box1.children...month1.options...month2.options...year.options...kr_ind.options...loading-output.children..\",\r\n    \r\n    \"inputs\": [\r\n        {\r\n            \"id\": \"business\",\r\n            \"property\": \"value\",\r\n            \"value\": \"Pragma\"\r\n        },\r\n        {\r\n            \"id\": \"business1\",\r\n            \"property\": \"value\",\r\n            \"value\": \"Pragma\"\r\n        },\r\n        {\r\n            \"id\": \"business2\",\r\n            \"property\": \"value\",\r\n            \"value\": \"Pragma\"\r\n        },\r\n        {\r\n            \"id\": \"business3\",\r\n            \"property\": \"value\",\r\n            \"value\": \"Pragma\"\r\n        },\r\n        {\r\n            \"id\": \"kr_ind\",\r\n            \"property\": \"value\",\r\n            \"value\": \"ingresos\"\r\n        },\r\n        {\r\n            \"id\": \"kr_ind1\",\r\n            \"property\": \"value\",\r\n            \"value\": \"ingresos\"\r\n        },\r\n        {\r\n            \"id\": \"kr_ind2\",\r\n            \"property\": \"value\",\r\n            \"value\": \"Ingresos Directos\"\r\n        },\r\n        {\r\n            \"id\": \"KR_mode\",\r\n            \"property\": \"value\",\r\n            \"value\": \"kr_global\"\r\n        },\r\n        {\r\n            \"id\": \"year\",\r\n            \"property\": \"value\",\r\n            \"value\": 2020\r\n        },\r\n        {\r\n            \"id\": \"month\",\r\n            \"property\": \"value\",\r\n            \"value\": \"13\"\r\n        },\r\n        {\r\n            \"id\": \"month1\",\r\n            \"property\": \"value\",\r\n            \"value\": 13\r\n        },\r\n        {\r\n            \"id\": \"month2\",\r\n            \"property\": \"value\",\r\n            \"value\": \"Acum\"\r\n        },\r\n        {\r\n            \"id\": \"KR_mode1\",\r\n            \"property\": \"value\",\r\n            \"value\": \"kr_global\"\r\n        },\r\n        {\r\n            \"id\": \"marcas\",\r\n            \"property\": \"value\",\r\n            \"value\": [\r\n                \"Comfama\",\r\n                \"Familia\"\r\n                \r\n            ]\r\n        },\r\n        {\r\n            \"id\": \"loading-input\",\r\n            \"property\": \"children\",\r\n            \"value\": {\r\n                \"props\": {\r\n                    \"children\": null,\r\n                    \"id\": \"loading-output\"\r\n                },\r\n                \"type\": \"Div\",\r\n                \"namespace\": \"dash_html_components\"\r\n            }\r\n        }\r\n    ],\r\n    \"changedPropIds\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://alb-srv-datospragma-pdn-1641720281.us-east-1.elb.amazonaws.com/metas_vs_facturacion/_dash-update-component",
+							"protocol": "http",
+							"host": [
+								"alb-srv-datospragma-pdn-1641720281",
+								"us-east-1",
+								"elb",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"metas_vs_facturacion",
+								"_dash-update-component"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
