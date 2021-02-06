@@ -4,10 +4,12 @@
   "description": "",
   "main": "newman.js",
   "dependencies": {
-    "cucumber-html-reporter": "^5.3.0",
-    "newman": "^5.2.2"
+    "newman": "^5.2.2",
+    "newman-reporter-html": "^1.0.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cucumber-html-reporter": "^5.3.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
