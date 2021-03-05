@@ -4,7 +4,7 @@ pipeline {
         stage('ejecutar collection') {
             steps {
                 echo "[EXEC] EJECUTANDO POSTMAN"
-                echo  " newman run /Collections/Services_jenkins.postman_collection.json",
+                echo  "newman run /Collections/Services_jenkins.postman_collection.json",
             }
         }
     }
