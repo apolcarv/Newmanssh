@@ -4,7 +4,7 @@ pipeline {
         stage('ejecutar collection') {
             steps {
                 echo "[EXEC] EJECUTANDO POSTMAN"
-                sh "newman run /collections/test.json"
+                sh "newman run /Collections/test.json"
             }
         }
     }
