@@ -4,11 +4,11 @@ const newman = require('newman');
 const { Collection } = require('postman-collection');
 
 newman.run({
-    collection: require('./Collections/Services_jenkins.postman_collection.json'),
+    collection: require('./Collections/test.json' ),
  // environment: './enviroment/nombre del environment o archivo',
  // globals: '/.variables_globales/nombre del archivo',
     interacionCount: 2,   
-    reporters: ['cli','htmlextra'],
+    reporters: ['cli','html'],
     reporter:{
         htmlextra:{
             export: '.report/reports.html',
