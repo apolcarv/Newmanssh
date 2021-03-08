@@ -4,7 +4,7 @@ pipeline {
         stage('ejecutar collection') {
             steps {
                 echo "[EXEC] EJECUTANDO POSTMAN"
-                echo "/collections/Services_jenkins.postman_collection.json",
+                sh collection: require('./Collections/Services_jenkins.postman_collection.json'),
             }
         }
     }
