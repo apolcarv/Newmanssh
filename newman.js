@@ -8,7 +8,7 @@ newman.run({
  // environment: './enviroment/nombre del environment o archivo',
  // globals: '/.variables_globales/nombre del archivo',
     interacionCount: 2,   
-    reporters: ['cli','html'],
+    reporters: ['cli','htmlextra'],
     reporter:{
         htmlextra:{
             export: '.report/reports.html',
