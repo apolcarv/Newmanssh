@@ -19,13 +19,14 @@ pipeline {
         stage('Prueba') {
             steps {
                  echo "[EXEC] EJECUTANDO POSTMAN"
-                 bat "node newman run"
+                 bat "node newman run /Collections/test.json"
 
             }
         }
         stage('Reportes') {
             steps {
                  echo "[EXEC] RECUPERANDO REPORTERIA"
+
                  
             }
         }
