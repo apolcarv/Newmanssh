@@ -12,30 +12,19 @@ pipeline {
             steps {
                 echo "[EXEC] instalar newman"
                 bat "npm install newman"
+                bat "npm install newman-reporter-htmlextra"
             }
         }
         stage('Prueba') {
             steps {
                  echo "[EXEC] EJECUTANDO POSTMAN"
-                 bat "node newman run /Collections/test.json"
+                 bat "node newman run /Collections/test.json  -r htmlextra, csv"
             }
         }
         stage('Reportes') {
             steps {
                  echo "[EXEC] EJECUTANDO JUNIT PARA REPORTES",
-        reporters: ['cli','htmlextra'],
-        reporter:{
-        htmlextra:{
-            export: '.report/reports.html',
-            logs: true,
-            //skipHeaders: ['Server'. 'Authorization', 'X-Powered-By'],
-            skipSensitiveData: false,
-            title: 'report of web services TEST',
-            darkTheme: true,
-            showOnlyFails: false,
-            browserTitle: 'Reports TEST'
-        }
-        }
+      
     
             }
         }
