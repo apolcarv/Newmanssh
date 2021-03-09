@@ -11,6 +11,8 @@
     "cucumber-html-reporter": "^5.3.0"
   },
   "scripts": {
+    "test": "node newman run /Collections/test.json --reporters cli, junit --reporter-junit-export newman.xml"
+  },
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
