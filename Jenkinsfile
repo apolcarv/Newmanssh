@@ -23,7 +23,9 @@ pipeline {
         stage('Reportes') {
             steps {
                  echo "[EXEC] EJECUTANDO JUNIT PARA REPORTES"
-                 reporters: ['cli','html'],
+                 
+        interacionCount: 2,
+        reporters: ['cli','htmlextra'],
         reporter:{
         htmlextra:{
             export: '.report/reports.html',
