@@ -22,9 +22,7 @@ pipeline {
         }
         stage('Reportes') {
             steps {
-                 echo "[EXEC] EJECUTANDO JUNIT PARA REPORTES"
-                 
-        interacionCount: 2,
+                 echo "[EXEC] EJECUTANDO JUNIT PARA REPORTES",
         reporters: ['cli','htmlextra'],
         reporter:{
         htmlextra:{
@@ -37,7 +35,8 @@ pipeline {
             showOnlyFails: false,
             browserTitle: 'Reports TEST'
         }
-    }
+        }
+    
             }
         }
 
