@@ -23,9 +23,8 @@ pipeline {
         }
         stage('Reportes') {
             steps {
-                 echo "[EXEC] EJECUTANDO JUNIT PARA REPORTES",
-      
-    
+                 echo "[EXEC] EJECUTANDO JUNIT PARA REPORTES"
+                 
             }
         }
 
