@@ -17,14 +17,28 @@ pipeline {
         stage('Prueba') {
             steps {
                  echo "[EXEC] EJECUTANDO POSTMAN"
-                 bat "node newman run /Collections/test.json --reporters cli, junit --reporter-junit-export newman.xml"
+                 bat "node newman run /Collections/test.json"
             }
         }
         stage('Reportes') {
             steps {
                  echo "[EXEC] EJECUTANDO JUNIT PARA REPORTES"
-                 junit "newman.xml"
+                 reporters: ['cli','html'],
+        reporter:{
+        htmlextra:{
+            export: '.report/reports.html',
+            logs: true,
+            //skipHeaders: ['Server'. 'Authorization', 'X-Powered-By'],
+            skipSensitiveData: false,
+            title: 'report of web services TEST',
+            darkTheme: true,
+            showOnlyFails: false,
+            browserTitle: 'Reports TEST'
+        }
+    }
             }
         }
+
+
     }
 }
