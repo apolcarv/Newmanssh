@@ -12,6 +12,7 @@ pipeline {
             steps {
                 echo "[EXEC] instalar newman"
                 bat "npm install newman"
+                echo "[EXEC] instalar reporter htmlextra"
                 bat "npm install newman-reporter-htmlextra"
             }
         }
@@ -23,7 +24,7 @@ pipeline {
         }
         stage('Reportes') {
             steps {
-                 echo "[EXEC] EJECUTANDO JUNIT PARA REPORTES"
+                 echo "[EXEC] RECUPERANDO REPORTERIA"
                  
             }
         }
