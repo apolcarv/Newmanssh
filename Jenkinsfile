@@ -18,7 +18,7 @@ pipeline {
         stage('Prueba') {
             steps {
                  echo "[EXEC] EJECUTANDO POSTMAN"
-                 bat "node newman run /Collections/test.json  -r htmlextra, csv"
+                 bat "node newman run /Collections/test.json -r htmlextra --reporter-htmlextra-export ./results/report.html"
             }
         }
         stage('Reportes') {
