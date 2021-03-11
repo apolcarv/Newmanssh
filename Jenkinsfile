@@ -23,9 +23,14 @@ pipeline {
 
             }
         }
-        stage('Reportes') {
+        stage('cucumber Reports') {
             steps {
-                 echo "[EXEC] RECUPERANDO REPORTERIA"
+                 echo "[EXEC] REPORTERIA"
+                 cucumber buildStatus: "UNSTABLE",
+                    fileIncludePattern: "**/cucumber.json",
+                    jsonReportDirectory: 'target'
+
+
 
                  
             }
